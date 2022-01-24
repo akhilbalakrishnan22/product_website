@@ -417,7 +417,7 @@ img {
     display: grid;
 }
 
-.products__img{
+.products__img {
     width: 80px;
     position: absolute;
     inset: 0;
@@ -426,20 +426,20 @@ img {
     top: -3rem;
 }
 
-.products__content{
+.products__content {
     align-self: flex-end;
 }
 
 .products__title,
-.products__price{
+.products__price {
     font-size: var(--small-font-size);
 }
 
-.products__price{
+.products__price {
     font-weight: var(--font-semi-bold);
 }
 
-.products__button{
+.products__button {
     position: absolute;
     right: 0.5rem;
     bottom: 0.5rem;
@@ -448,3 +448,82 @@ img {
 }
 
 /*=============== Footer ===============*/
+.footer__container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    row-gap: 2rem;
+}
+
+.footer__logo{
+    width: 2rem;
+}
+
+.footer__title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.footer__link{
+    color: var(--text-color);
+}
+
+.footer__link:hover{
+    color: var(--white-color);
+}
+
+.footer__form{
+    display: flex;
+    column-gap: .5rem;
+    background-color: var(--container-color);
+    padding: 0.5rem 0.75rem;
+    border-radius: .5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.footer__input{
+    background-color: var(--container-color);
+    width: 90%;
+    color: var(--white-color);
+}
+
+.footer__input::placeholder{
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+}
+
+.footer__social{
+    display: flex;
+    column-gap: 1.25rem;
+}
+
+.footer__social-link{
+    display: inline-flex;
+    color: var(--white-color);
+    background: var(--container-color);
+    padding: 0.5rem;
+    border-radius: .25rem;
+    font-size: 1rem;
+}
+
+.footer__social-link:hover{
+    background-color: var(--black-color);
+}
+
+.footer__copy{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
+
+.footer__copy-link{
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
