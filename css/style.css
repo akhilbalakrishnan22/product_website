@@ -168,7 +168,7 @@ img {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .nav__menu {
         position: fixed;
         background-color: var(--body-color);
@@ -224,6 +224,14 @@ img {
 .scroll-header {
     background-color: var(--body-color);
     transition: .6s;
+}
+
+/*=============== Active Link ===============*/
+.active-link {
+    background: var(--white-color);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 /*=============== Home ===============*/
@@ -449,35 +457,35 @@ img {
 
 /*=============== Footer ===============*/
 .footer__container {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     row-gap: 2rem;
 }
 
-.footer__logo{
+.footer__logo {
     width: 2rem;
 }
 
-.footer__title{
+.footer__title {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1);
 }
 
-.footer__links{
+.footer__links {
     display: flex;
     flex-direction: column;
     row-gap: .5rem;
 }
 
-.footer__link{
+.footer__link {
     color: var(--text-color);
 }
 
-.footer__link:hover{
+.footer__link:hover {
     color: var(--white-color);
 }
 
-.footer__form{
+.footer__form {
     display: flex;
     column-gap: .5rem;
     background-color: var(--container-color);
@@ -486,24 +494,24 @@ img {
     margin-bottom: var(--mb-2);
 }
 
-.footer__input{
+.footer__input {
     background-color: var(--container-color);
     width: 90%;
     color: var(--white-color);
 }
 
-.footer__input::placeholder{
+.footer__input::placeholder {
     color: var(--text-color);
     font-size: var(--normal-font-size);
     font-family: var(--body-font);
 }
 
-.footer__social{
+.footer__social {
     display: flex;
     column-gap: 1.25rem;
 }
 
-.footer__social-link{
+.footer__social-link {
     display: inline-flex;
     color: var(--white-color);
     background: var(--container-color);
@@ -512,18 +520,58 @@ img {
     font-size: 1rem;
 }
 
-.footer__social-link:hover{
+.footer__social-link:hover {
     background-color: var(--black-color);
 }
 
-.footer__copy{
+.footer__copy {
     margin-top: 5rem;
     text-align: center;
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
 }
 
-.footer__copy-link{
-    font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
+
+/*=============== Scroll Up ===============*/
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -20rem;
+    display: flex;
+    background-color: var(--container-color);
+    border-radius: .25rem;
+    padding: 0.45rem;
+    opacity: .9;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+
+.scrollup__icon {
+    color: var(--white-color);
+    font-size: 1.35rem;
+}
+
+.scrollup:hover {
+    background-color: var(--black-color);
+    opacity: 1;
+}
+
+/*=============== Show Scroll Up ===============*/
+.show-scroll {
+    bottom: 5rem;
+}
+
+/*=============== Scroll Bar ===============*/
+::-webkit-scrollbar {
+    width: 0.60rem;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scroll-thumb-color-alt);
 }
